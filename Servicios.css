@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+}
+header{
+    background-color: #00e1ff;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .logo img {
+    height: 150px;
+    width: auto;
+   
+
+}
+    
+    nav {
+    display: flex;
+}
+
+    .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+    .nav-menu li {
+    margin-left: 65px;
+}
+
+    .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+    .nav-menu a:hover {
+    color: #000000;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 40px;
+}
+main p{
+    font-size: 23px;
+    padding-top: 20px;
+    text-align: center;
+}
+section{
+    width: 1060px;
+    margin: 10px auto;
+    align-items: center;
+}
+section{
+    align-items: center;
+}
+img{
+    width: 260px;
+    height: auto;
+}
+figure{
+    background: white;
+    display: inline-block;
+    box-shadow: 0 0 15px rgb(0,0,0);
+    position:static;
+    filter: blur(1px) saturate(50%);
+    transition: all 350ms ease-in-out ;
+}
+img.img{
+    padding-left: 0px;
+    
+}
+img.estetica{
+    padding-left: 0px;
+    
+}
+img.cirugias{
+    padding-left: 0px;
+    
+}
+img.vacunas{
+    padding-left: 0px;   
+}
+figure:nth-of-type(4n+4) {/* 4,8*/ 
+    transform: rotate(7deg);
+}
+figure:nth-of-type(4n+1){/*1,5,9*/
+    transform: rotate(-8deg);
+}
+figure:nth-of-type(4n-6){/*2,6*/
+    transform: rotate(20deg);
+}
+figure:nth-of-type(4n-1){/*3,7*/
+    transform: rotate(-15deg);
+}
+figure:hover{
+    transform: rotate(0) scale(1.5,1.5);
+    z-index: 10;
+    filter: blur(0) saturate(100%);
+}
+figcaption{
+    position: relative;
+    top: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+footer {
+    font-size: 15px;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    font-size: 15px;
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.footer-section p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.footer-section a {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-image: url('Img/banner\ 2_page-0001.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
